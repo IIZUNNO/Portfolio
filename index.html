@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noam Boutounas - Développeur L3 Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Noam Boutounas</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#" onclick="openCVModal()" class="cv-btn">
+                    <i class="fas fa-file-pdf"></i> Mon CV
+                </a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#education">Parcours</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section avec VRAIE Image -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Étudiant en <span class="highlight">L3 Informatique</span></h1>
+                <p>J'ai pour but de me spécialiser dans la cybersécurité ou l'apprentissage de l'Intelligence Artificielle</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Voir mes projets</a>
+                    <a href="#" onclick="openCVModal()" class="btn secondary">
+                        <i class="fas fa-file-pdf"></i> Voir mon CV
+                    </a>
+                    <a href="#contact" class="btn secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Développement Informatique" class="coding-image">
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <div class="section-container">
+            <h2>À Propos</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    Actuellement en Licence 3 Informatique, je me spécialise dans le domaine des nouvelles technologies. 
+                    Passionné par la création d'applications web modernes et innovantes.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">🎯 Objectif</h3>
+                        <p>Progresser au cours de mon parcours universitaire afin de travailler dans le domaine de l'IA / cybersécurité</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">💡 Passion</h3>
+                        <p>Créer des applications qui allient design moderne et performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours Scolaire -->
+    <section id="education">
+        <div class="section-container">
+            <h2>Parcours Scolaire</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-year">2025 - Présent</div>
+                    <div class="education-content">
+                        <h3>Licence 3 Informatique</h3>
+                        <p>Formation en cours - Spécialisation en développement et nouvelles technologies</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2023 - 2025</div>
+                    <div class="education-content">
+                        <h3>Licence 1 & 2 Informatique - Validées</h3>
+                        <p>Acquisition des bases fondamentales en programmation, algorithmique et systèmes d'information</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2022</div>
+                    <div class="education-content">
+                        <h3>Baccalauréat Général - Mention Bien</h3>
+                        <p>Spécialités NSI (Numérique et Sciences Informatiques) et HGGSP (Histoire-Géographie, Géopolitique et Sciences Politiques)</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2018</div>
+                    <div class="education-content">
+                        <h3>Brevet des Collèges - Mention Très Bien</h3>
+                        <p>Diplôme national du brevet obtenu avec mention très bien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills">
+        <div class="section-container">
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>💻 Développement</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                                <span>Python</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
+                                <span>Java</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">
+                                <span>C</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+                                <span>HTML5/CSS3/JS</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>🛠️ Outils & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                                <span>Git & GitHub</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" class="skill-icon">
+                                <span>DB Browser (SQLite)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="skill-icon">
+                                <span>VS Code</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notepadplusplus/notepadplusplus-original.svg" alt="Notepad++" class="skill-icon">
+                                <span>Notepad++</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>🌟 Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>🚀 Autonomie</li>
+                        <li>🔍 Curiosité</li>
+                        <li>🎯 Analyse et Résolution de problèmes</li>
+                        <li>👥 Peut travailler en équipe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <div class="section-container">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Projet RetroChat -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Capture_decran_2024-12-05_a_10.13.57.png" alt="Interface RetroChat - Application de messagerie" class="project-screenshot">
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>RetroChat</h3>
+                        <p>Application de messagerie instantanée moderne inspirée de MSN Messenger, développée en Java avec système de sockets TCP/IP. Permet la communication en temps réel entre plusieurs utilisateurs avec interface graphique intuitive.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Socket TCP/IP</span>
+                            <span class="tag">Interface Graphique</span>
+                            <span class="tag">Réseau</span>
+                            <span class="tag">Multithreading</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/IIZUNNO/RetroChat" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Explication du projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet WorldDigital -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Capture d'écran 2025-10-06 154420.png" alt="Site WorldDigital - Page d'accueil" class="project-screenshot">
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>WorldDigital</h3>
+                        <p>Site web d'actualités complet regroupant quatre catégories : actualités mondiales, sport, jeux vidéo et musique. Interface responsive développée en pur HTML/CSS/JavaScript avec système de filtrage par catégorie.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                            <span class="tag">API REST</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/IIZUNNO/Projet-WorlDigital" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet Base OM -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="database-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Base de données Olympique de Marseille</h3>
+                        <p>Base de données relationnelle complète sur l'Olympique de Marseille avec statistiques détaillées de la saison 2022-2023. Inclut données des joueurs, matchs, buts, passes décisives et analyses performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Analyse de données</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/IIZUNNO/Base-de-donn-e-OM-24-25" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-chart-bar"></i> Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="section-container">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Restons en contact !</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>boutounasnoam@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p>https://github.com/IIZUNNO</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Localisation</strong>
+                            <p>Marseille/Valenciennes, France</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary" style="opacity: 1; animation: none;">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="section-container">
+            <div class="social-links">
+                <a href="https://github.com/IIZUNNO" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Noam Boutounas. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Modal CV -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCVModal()">&times;</span>
+            <iframe src="cv/CV_Noam_Boutounas.pdf" width="100%" height="600px"></iframe>
+            <div class="modal-actions">
+                <a href="C:\Users\darks\OneDrive\Bureau\L3 Info\S5\Technologie du Web\Portfolio\CV\CV.pdf" download class="btn primary">
+                    <i class="fas fa-download"></i> Télécharger
+                </a>
+                <button onclick="closeCVModal()" class="btn secondary">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
